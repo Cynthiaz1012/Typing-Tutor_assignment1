@@ -72,6 +72,66 @@ public class App extends Application {
             new Button("Alt"),
             new Button("Ctrl")
         };
+        
+        String[] keyNames = {
+            "DIGIT1",
+            "DIGIT2",
+            "DIGIT3",
+            "DIGIT4",
+            "DIGIT5",
+            "DIGIT6",
+            "DIGIT7",
+            "DIGIT8",
+            "DIGIT9",
+            "DIGIT0",
+            "MINUS",
+            "EQUALS",
+            "BACK_SPACE",
+
+            "TAB",
+            "Q",
+            "W",
+            "E",
+            "R",
+            "T",
+            "Y",
+            "U",
+            "I",
+            "O",
+            "P",
+            "OPEN_BRACKET",
+            "CLOSE_BRACKET",
+
+            "CAPS",
+            "A",
+            "S",
+            "D",
+            "F",
+            "G",
+            "H",
+            "J",
+            "K",
+            "L",
+            "ENTER",
+
+            "SHIFT",
+            "Z",
+            "X",
+            "C",
+            "V",
+            "B",
+            "N",
+            "M",
+            "COMMA",
+            "PERIOD",
+            "SHIFT",
+
+            "CONTROL",
+            "ALT",
+            "SPACE",
+            "ALT",
+            "CONTROL"
+        };
     }
 
     public static void main(String[] args) {
