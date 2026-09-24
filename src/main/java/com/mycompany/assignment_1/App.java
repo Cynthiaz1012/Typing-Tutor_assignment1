@@ -149,6 +149,10 @@ public class App extends Application {
         Label messageLabel = new Label("");
         Label correctLabel = new Label("Correct: 0");
         Label incorrectLabel = new Label("Incorrect: 0");
+        
+        Button nextButton = new Button( "Go to next input text");
+        Button resetButton = new Button("Reset");
+
 
     }
 
