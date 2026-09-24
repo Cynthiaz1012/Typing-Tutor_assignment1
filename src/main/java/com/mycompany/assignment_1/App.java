@@ -2,7 +2,7 @@ package com.mycompany.assignment_1;
 
 import javafx.application.Application;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 
@@ -144,8 +144,12 @@ public class App extends Application {
             "ALT",
             "CONTROL"
         };
-        
        
+        Label keyPressedLabel = new Label("");
+        Label messageLabel = new Label("");
+        Label correctLabel = new Label("Correct: 0");
+        Label incorrectLabel = new Label("Incorrect: 0");
+
     }
 
     public static void main(String[] args) {
