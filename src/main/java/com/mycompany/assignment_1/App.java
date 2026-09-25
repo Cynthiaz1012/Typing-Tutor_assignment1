@@ -148,6 +148,7 @@ public class App extends Application {
 
         TextField expectedField = new TextField();
         expectedField.setText(texts[textNumber]);
+        TextField responseField = new TextField();
 
        
         Label keyPressedLabel = new Label("");
