@@ -171,15 +171,26 @@ public class App extends Application {
                     handled = true;
                 }
             }
-        
+            
+            if (!handled) {
+                messageLabel.setText("Not handled");
+                messageLabel.setStyle(
+                        "-fx-text-fill: red;"
+                );
+
+            } else {
+                messageLabel.setText("");
+                messageLabel.setStyle("");
+            }
+        });
+
         Button nextButton = new Button( "Go to next input text");
         Button resetButton = new Button("Reset");
-
         
        
-
         }
      }
+
 
     public static void main(String[] args) {
         launch();
