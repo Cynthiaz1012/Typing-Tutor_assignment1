@@ -279,6 +279,18 @@ public class App extends Application {
         keyboard.add(keyButtons[34], 8, 2);
         keyboard.add(keyButtons[35], 9, 2);
         keyboard.add(keyButtons[36], 10, 2);
+        
+        keyboard.add(keyButtons[37], 0, 3);
+        keyboard.add(keyButtons[38], 1, 3);
+        keyboard.add(keyButtons[39], 2, 3);
+        keyboard.add(keyButtons[40], 3, 3);
+        keyboard.add(keyButtons[41], 4, 3);
+        keyboard.add(keyButtons[42], 5, 3);
+        keyboard.add(keyButtons[43], 6, 3);
+        keyboard.add(keyButtons[44], 7, 3);
+        keyboard.add(keyButtons[45], 8, 3);
+        keyboard.add(keyButtons[46], 9, 3);
+        keyboard.add(keyButtons[47], 10, 3);
 
      }
 
