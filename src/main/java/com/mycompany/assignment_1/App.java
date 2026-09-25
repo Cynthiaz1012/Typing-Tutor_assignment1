@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -301,6 +302,10 @@ public class App extends Application {
         
         VBox textSection = new VBox(8);
         textSection.getChildren().add(expectedField);
+        
+        HBox nextSection = new HBox(10);
+        nextSection.setAlignment(Pos.CENTER_RIGHT);
+        nextSection.getChildren().addAll(nextButton,counterLabel);
 
      }
 
