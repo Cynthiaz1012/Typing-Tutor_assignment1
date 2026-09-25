@@ -1,6 +1,7 @@
 package com.mycompany.assignment_1;
 
 import javafx.application.Application;
+import javafx.stage.Stage;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -299,7 +300,7 @@ public class App extends Application {
         keyboard.add(keyButtons[50], 4, 4);
         keyboard.add(keyButtons[51], 5, 4);
         keyboard.add(keyButtons[52], 6, 4);
-        
+      
         VBox textSection = new VBox(8);
         textSection.getChildren().add(expectedField);
         
@@ -321,6 +322,24 @@ public class App extends Application {
         primaryStage.show();
     
 }
+    
+       public void updateScore(TextField responseField,TextField expectedField,Label correctLabel,Label incorrectLabel) {
+        String response = responseField.getText();
+        String expected = expectedField.getText();
+        int correct = 0;
+        int incorrect = 0;
+        
+        for (int i = 0; i < response.length(); i++) {
+            if (i < expected.length() && response.charAt(i) == expected.charAt(i)) {
+                correct++;
+            } else {
+                incorrect++;
+            }
+        }
+ 
+        correctLabel.setText("Correct: " + correct);
+        incorrectLabel.setText("Incorrect: " + incorrect);
+    }
 
     public static void main(String[] args) {
         launch();
