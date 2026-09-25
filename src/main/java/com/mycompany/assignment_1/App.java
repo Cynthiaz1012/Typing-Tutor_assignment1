@@ -197,6 +197,25 @@ public class App extends Application {
         Button nextButton = new Button( "Go to next input text");
         Button resetButton = new Button("Reset");
        
+        Label counterLabel = new Label("1 of " + texts.length);
+       
+        nextButton.setOnAction(event -> {
+            if (textNumber < texts.length - 1) {
+                textNumber++;
+                expectedField.setText(texts[textNumber]);
+                responseField.setText("");
+                counterLabel.setText((textNumber + 1) + " of " + texts.length);
+                correctLabel.setText("Correct: 0");
+                incorrectLabel.setText("Incorrect: 0");
+                keyPressedLabel.setText("");
+                messageLabel.setText("");
+                messageLabel.setStyle("");
+                for (int i = 0; i < keyButtons.length; i++) {
+                    keyButtons[i].setStyle("");
+                }
+            }
+        });
+        
      }
 
     public static void main(String[] args) {
