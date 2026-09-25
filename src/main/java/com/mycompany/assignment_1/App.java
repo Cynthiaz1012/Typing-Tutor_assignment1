@@ -267,6 +267,19 @@ public class App extends Application {
         keyboard.add(keyButtons[23], 10, 1);
         keyboard.add(keyButtons[24], 11, 1);
         keyboard.add(keyButtons[25], 12, 1);
+        
+        keyboard.add(keyButtons[26], 0, 2);
+        keyboard.add(keyButtons[27], 1, 2);
+        keyboard.add(keyButtons[28], 2, 2);
+        keyboard.add(keyButtons[29], 3, 2);
+        keyboard.add(keyButtons[30], 4, 2);
+        keyboard.add(keyButtons[31], 5, 2);
+        keyboard.add(keyButtons[32], 6, 2);
+        keyboard.add(keyButtons[33], 7, 2);
+        keyboard.add(keyButtons[34], 8, 2);
+        keyboard.add(keyButtons[35], 9, 2);
+        keyboard.add(keyButtons[36], 10, 2);
+
      }
 
     public static void main(String[] args) {
