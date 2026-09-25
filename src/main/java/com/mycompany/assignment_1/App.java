@@ -216,6 +216,21 @@ public class App extends Application {
             }
         });
         
+        resetButton.setOnAction(event -> {
+            textNumber = 0;
+            expectedField.setText(texts[textNumber]);
+            responseField.setText("");
+            counterLabel.setText("1 of " + texts.length);
+            correctLabel.setText("Correct: 0");
+            incorrectLabel.setText("Incorrect: 0");
+            keyPressedLabel.setText("");
+            messageLabel.setText("");
+            messageLabel.setStyle("");
+            for (int i = 0; i < keyButtons.length; i++) {
+                keyButtons[i].setStyle("");
+            }
+        });
+        
      }
 
     public static void main(String[] args) {
