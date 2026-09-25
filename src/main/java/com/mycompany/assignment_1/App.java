@@ -154,14 +154,32 @@ public class App extends Application {
         Label keyPressedLabel = new Label("");
         
         Label messageLabel = new Label("");
+        
         Label correctLabel = new Label("Correct: 0");
         Label incorrectLabel = new Label("Incorrect: 0");
+        
+        responseField.setOnKeyPressed(event -> {
+            String key = event.getCode().toString();
+            keyPressedLabel.setText(key);
+            boolean handled = false;
+
+            for (int i = 0; i < keyNames.length; i++) {
+                if (keyNames[i].equals(key)) {
+                    keyButtons[i].setStyle(
+                            "-fx-background-color: yellow;"
+                    );
+                    handled = true;
+                }
+            }
         
         Button nextButton = new Button( "Go to next input text");
         Button resetButton = new Button("Reset");
 
+        
+       
 
-    }
+        }
+     }
 
     public static void main(String[] args) {
         launch();
