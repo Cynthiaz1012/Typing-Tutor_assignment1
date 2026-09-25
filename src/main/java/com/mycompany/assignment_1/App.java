@@ -3,13 +3,13 @@ package com.mycompany.assignment_1;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.stage.Stage;
 
 
 /**
@@ -30,7 +30,7 @@ public class App extends Application {
     int textNumber = 0;
 
     @Override
-    public void start(Stage stage) {
+    public void start(Stage primaryStage) {
         Button[] keyButtons = {
             new Button("1"),
             new Button("2"),
@@ -314,8 +314,13 @@ public class App extends Application {
         VBox root = new VBox(10);
         root.setPadding(new Insets(10));
         root.getChildren().addAll(textSection,nextSection,responseField,keyboard,information);
-
-     }
+        
+        Scene scene = new Scene(root,1050,500);
+        primaryStage.setTitle("Typing App");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    
+}
 
     public static void main(String[] args) {
         launch();
