@@ -187,7 +187,7 @@ public class App extends Application {
             } else {
                 messageLabel.setText("");
                 messageLabel.setStyle("");
-            }
+            } 
         });
         
          responseField.setOnKeyReleased(event -> { 
@@ -197,7 +197,9 @@ public class App extends Application {
                 if (keyNames[i].equals(key)) { 
                     keyButtons[i].setStyle(""); 
                 } 
-            }        
+            }   
+            
+            updateScore(responseField,expectedField,correctLabel,incorrectLabel);
         });
    
         Button nextButton = new Button( "Go to next input text");
@@ -320,7 +322,6 @@ public class App extends Application {
         primaryStage.setTitle("Typing App");
         primaryStage.setScene(scene);
         primaryStage.show();
-    
 }
     
        public void updateScore(TextField responseField,TextField expectedField,Label correctLabel,Label incorrectLabel) {
