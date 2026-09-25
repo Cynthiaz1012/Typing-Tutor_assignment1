@@ -12,7 +12,6 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-
 /**
  * JavaFX App
  * @author Cynthia Zhang
@@ -171,26 +170,21 @@ public class App extends Application {
 
             for (int i = 0; i < keyNames.length; i++) {
                 if (keyNames[i].equals(key)) {
-                    keyButtons[i].setStyle(
-                            "-fx-background-color: yellow;"
-                    );
+                    keyButtons[i].setStyle("-fx-background-color: yellow;");
                     handled = true;
                 }
             }
             
             if (!handled) {
                 messageLabel.setText("Not handled");
-                messageLabel.setStyle(
-                        "-fx-text-fill: red;"
-                );
-
+                messageLabel.setStyle("-fx-text-fill: red;");
             } else {
                 messageLabel.setText("");
                 messageLabel.setStyle("");
             } 
         });
         
-         responseField.setOnKeyReleased(event -> { 
+        responseField.setOnKeyReleased(event -> { 
             String key = event.getCode().toString(); 
 
             for (int i = 0; i < keyNames.length; i++) { 
@@ -337,7 +331,6 @@ public class App extends Application {
                 incorrect++;
             }
         }
- 
         correctLabel.setText("Correct: " + correct);
         incorrectLabel.setText("Incorrect: " + incorrect);
     }
