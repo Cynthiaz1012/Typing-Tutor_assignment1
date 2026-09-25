@@ -239,6 +239,20 @@ public class App extends Application {
         keyboard.setVgap(5);
         keyboard.setPadding(new Insets(5));
         keyboard.setAlignment(Pos.CENTER);
+             
+        keyboard.add(keyButtons[0], 0, 0);
+        keyboard.add(keyButtons[1], 1, 0);
+        keyboard.add(keyButtons[2], 2, 0);
+        keyboard.add(keyButtons[3], 3, 0);
+        keyboard.add(keyButtons[4], 4, 0);
+        keyboard.add(keyButtons[5], 5, 0);
+        keyboard.add(keyButtons[6], 6, 0);
+        keyboard.add(keyButtons[7], 7, 0);
+        keyboard.add(keyButtons[8], 8, 0);
+        keyboard.add(keyButtons[9], 9, 0);
+        keyboard.add(keyButtons[10], 10, 0);
+        keyboard.add(keyButtons[11], 11, 0);
+        keyboard.add(keyButtons[12], 12, 0);
      }
 
     public static void main(String[] args) {
