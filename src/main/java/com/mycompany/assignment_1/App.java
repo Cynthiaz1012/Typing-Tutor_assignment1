@@ -7,6 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 
@@ -297,6 +298,10 @@ public class App extends Application {
         keyboard.add(keyButtons[50], 4, 4);
         keyboard.add(keyButtons[51], 5, 4);
         keyboard.add(keyButtons[52], 6, 4);
+        
+        VBox textSection = new VBox(8);
+        textSection.getChildren().add(expectedField);
+
      }
 
     public static void main(String[] args) {
