@@ -306,6 +306,10 @@ public class App extends Application {
         HBox nextSection = new HBox(10);
         nextSection.setAlignment(Pos.CENTER_RIGHT);
         nextSection.getChildren().addAll(nextButton,counterLabel);
+        
+        HBox information = new HBox(15);
+        information.setAlignment(Pos.CENTER_LEFT);
+        information.getChildren().addAll(keyLabel,keyPressedLabel,messageLabel,correctLabel,incorrectLabel,resetButton);
 
      }
 
