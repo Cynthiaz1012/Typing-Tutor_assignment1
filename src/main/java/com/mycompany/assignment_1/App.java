@@ -310,6 +310,10 @@ public class App extends Application {
         HBox information = new HBox(15);
         information.setAlignment(Pos.CENTER_LEFT);
         information.getChildren().addAll(keyLabel,keyPressedLabel,messageLabel,correctLabel,incorrectLabel,resetButton);
+        
+        VBox root = new VBox(10);
+        root.setPadding(new Insets(10));
+        root.getChildren().addAll(textSection,nextSection,responseField,keyboard,information);
 
      }
 
