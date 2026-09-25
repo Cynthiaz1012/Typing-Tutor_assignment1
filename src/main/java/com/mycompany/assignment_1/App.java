@@ -1,9 +1,12 @@
 package com.mycompany.assignment_1;
 
 import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 
@@ -231,6 +234,11 @@ public class App extends Application {
             }
         });
         
+        GridPane keyboard = new GridPane();
+        keyboard.setHgap(5);
+        keyboard.setVgap(5);
+        keyboard.setPadding(new Insets(5));
+        keyboard.setAlignment(Pos.CENTER);
      }
 
     public static void main(String[] args) {
