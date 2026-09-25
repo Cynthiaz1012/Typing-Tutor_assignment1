@@ -183,17 +183,23 @@ public class App extends Application {
                 messageLabel.setStyle("");
             }
         });
+        
+         responseField.setOnKeyReleased(event -> { 
+            String key = event.getCode().toString(); 
 
+            for (int i = 0; i < keyNames.length; i++) { 
+                if (keyNames[i].equals(key)) { 
+                    keyButtons[i].setStyle(""); 
+                } 
+            }        
+        });
+   
         Button nextButton = new Button( "Go to next input text");
         Button resetButton = new Button("Reset");
-        
        
-        }
      }
-
 
     public static void main(String[] args) {
         launch();
     }
-
 }
