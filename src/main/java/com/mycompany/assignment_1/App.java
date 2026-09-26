@@ -15,6 +15,7 @@ import javafx.scene.layout.VBox;
 /**
  * JavaFX App
  * @author Cynthia Zhang
+ * Git hub link: https://github.com/Cynthiaz1012/Typing-Tutor_assignment1
  */
 public class App extends Application {
     
